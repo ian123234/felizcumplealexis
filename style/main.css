@@ -5,8 +5,10 @@ html {
 body {
   font-family: 'Poppins', sans-serif;
   margin: 0;
-  background-color: #ff0000 !important; /* Color rojo */
-  background-image: linear-gradient(to right, #ff0000, #0033cc) !important; /* De rojo a azul */
+  background-image: url('./img/sanlorenzo.jpg'); /* Imagen de fondo */
+  background-size: cover; /* Hace que la imagen cubra todo el fondo */
+  background-position: center; /* Centra la imagen */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
 }
 
 .song {
