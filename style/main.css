@@ -5,7 +5,8 @@ html {
 body {
   font-family: 'Poppins', sans-serif;
   margin: 0;
-  background: linear-gradient(to bottom, #c8102e, #0c4b89); /* De rojo a azul */
+  background-color: #ff0000; /* Color rojo */
+  background-image: linear-gradient(to right, #ff0000, #0033cc); /* De rojo a azul */
 }
 
 .song {
