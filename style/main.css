@@ -5,6 +5,7 @@ html {
 body {
   font-family: 'Poppins', sans-serif;
   margin: 0;
+  background: linear-gradient(to bottom, #c8102e, #0c4b89); /* De rojo a azul */
 }
 
 .song {
@@ -90,10 +91,9 @@ body {
   display: inline-block;
 }
 
-.idea-6 span{
+.idea-6 span {
   font-size: 15rem;
 }
-
 
 .six {
   position: relative;
@@ -105,13 +105,11 @@ body {
   display: inline-block;
   height: 350px;
   max-width: 100%;
-  /* height: auto; */
 }
 
 .six .hat {
   left: 41.5%;
   position: absolute;
-  /* transform: scale(0.1); */
   top: -35%;
   width: 80px;
 }
@@ -273,7 +271,6 @@ body {
   }
 
   .six .hat {
-    /* top: -20px; */
     width: 50px;
   }
 
