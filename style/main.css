@@ -34,15 +34,18 @@ body {
 
 .one {
   font-size: 4.5rem;
+  color: white; /* Texto en blanco */
 }
 
 .two {
   font-size: 1.2rem;
   font-weight: lighter;
+  color: white; /* Texto en blanco */
 }
 
 .three {
   font-size: 3rem;
+  color: white; /* Texto en blanco */
 }
 
 .four .text-box {
@@ -57,6 +60,7 @@ body {
 .text-box p {
   margin: 0;
   text-align: left;
+  color: white; /* Texto en blanco */
 }
 
 .text-box span {
@@ -67,7 +71,7 @@ body {
   background-color: rgb(21, 161, 237);
   border-radius: 3px;
   bottom: -50px;
-  color: #fff;
+  color: #fff; /* Botón en blanco */
   padding: .5rem 1rem;
   position: absolute;
   right: 5px;
@@ -78,24 +82,29 @@ body {
   left: 0;
   position: absolute;
   right: 0;
+  color: white; /* Texto en blanco */
 }
 
 .idea-3 strong {
   border-radius: 3px;
   display: inline-block;
   padding: 3px 5px;
+  color: white; /* Texto en blanco */
 }
 
 .five .idea-5 {
   font-size: 4rem;
+  color: white; /* Texto en blanco */
 }
 
 .idea-5 span, .idea-6 span, .wish-hbd span {
   display: inline-block;
+  color: white; /* Texto en blanco */
 }
 
 .idea-6 span {
   font-size: 15rem;
+  color: white; /* Texto en blanco */
 }
 
 .six {
@@ -208,17 +217,20 @@ body {
   font-size: 3em;
   margin: 0;
   text-transform: uppercase;
+  color: white; /* Texto en blanco */
 }
 
 .wish h5 {
   font-size: 2rem;
   font-weight: lighter;
   margin: 10px 0 0;
+  color: white; /* Texto en blanco */
 }
 
 .nine p {
   font-size: 2rem;
   font-weight: lighter;
+  color: white; /* Texto en blanco */
 }
 
 #replay {
