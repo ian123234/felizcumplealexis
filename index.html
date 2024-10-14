@@ -144,6 +144,10 @@
             <p id="replay">Podes apretar aca si querés verlo de nuevo.</p>
             <p class="last-smile">:)</p>
         </div>
+        
+        <!-- Imagen adicional -->
+        <img src="img/non.jpg" alt="Imagen Especial" id="specialImage" style="display: none; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 1000;"/>
+
     </div>
 
 </body>
@@ -152,5 +156,25 @@
     <!-- Sweetalert -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script type="application/javascript" src="./script/main.js"></script>
+    <script>
+        const textos = [
+            "Te mereces una página",
+            "Otro mensaje",
+            "Y otro más"
+        ];
+        let textoActual = 0;
 
+        setInterval(() => {
+            textoActual = (textoActual + 1) % textos.length;
+            const greetingText = document.getElementById("greetingText");
+            greetingText.innerText = textos[textoActual];
+
+            // Mostrar imagen especial si el texto es "Te mereces una página"
+            if (textos[textoActual] === "Te mereces una página") {
+                document.getElementById("specialImage").style.display = "block"; // Muestra la imagen
+            } else {
+                document.getElementById("specialImage").style.display = "none"; // Oculta la imagen
+            }
+        }, 3000);
+    </script>
 </html>
