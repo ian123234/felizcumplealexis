@@ -2,18 +2,18 @@
 <html lang="es">
 
 <head>
-    <link rel="stylesheet" href="style/main.css">
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
-    <title>Feliz Cumpleaños, Alexis!!! :)</title>
-    <!-- Google Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
-    <!-- My Style -->
-    <link rel="stylesheet" href="./style/main.css" />
+  <link rel="stylesheet" href="style/main.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+  <title>Feliz Cumpleaños, Alexis!!! :)</title>
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+  <!-- My Style -->
+  <link rel="stylesheet" href="./style/main.css" />
 </head>
 
 <body>
@@ -21,7 +21,7 @@
     <audio class="song" loop autoplay>
         <source src="./music/feliz.mp4">
         </source>
-        Tu navegador no está invitado a la divertida sesión de audio.
+       Tu navegador no está invitado a la divertida sesión de audio.
     </audio>
 
     <div class="container">
@@ -41,7 +41,9 @@
             <div class="text-box">
                 <p class="hbd-chatbox">
                     Happy Birthday to You!! 🎂
-                    Alexis te hice una pagina de regalo no se que poner aca, pero espero que la hayas pasado bien porque claramente ya paso tu cumple y esto estaba en produccion en su momento bueno no va al caso, en conclusion no hay plata ni datos de regalo (aunque tal vez si te preste) pero espero que te guste la pagina
+
+                    Alexis te hice una pagina de regalo no se que poner aca, pero espero que la hayas pasado bien porque claramente ya paso tu cumple  y esto estaba en produccion en su momento bueno no va al caso, en conclusion no hay plata ni datos de regalo (aunque tal vez si te preste) pero espero que te guste la pagina
+                    
                     Con cariño tu amigo que no es tu amigo 
                     Ian
                 </p>
@@ -57,7 +59,7 @@
                 <strong>special</strong>
                 .
             </p>
-            <p class="idea-4">Te mereces una página</p>
+            <p class="idea-4">Te mereces una pagina</p>
             <img src="./img/non.jpg" alt="non" class="non-image" style="display: none;"/>
             <p class="idea-5">
                 Encima con un buen fondo.
@@ -145,52 +147,11 @@
         </div>
     </div>
 
+</body>
     <!-- Greensock -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
     <!-- Sweetalert -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script type="application/javascript" src="./script/main.js"></script>
-
-    <!-- Tu script JavaScript para mostrar la imagen -->
-    <script>
-        const greetingText = document.getElementById('greetingText');
-        const nonImage = document.querySelector('.non-image');
-
-        // Función para mostrar la imagen
-        function mostrarImagen() {
-            nonImage.style.display = 'block'; // Muestra la imagen
-        }
-
-        // Función para ocultar la imagen
-        function ocultarImagen() {
-            nonImage.style.display = 'none'; // Oculta la imagen
-        }
-
-        // Mostrar la imagen al cargar la página
-        ocultarImagen(); // Asegúrate de que esté oculta al inicio
-
-        // Array de textos
-        const textos = [
-            "¡No hay guita pero esta esto que es mucho mejor!",
-            "Fue tu cumpleaños!!:D",
-            "Te mereces una página", // Cambia este texto
-            "Happy Birthday to You!! 🎂",
-            // Agrega aquí más textos si es necesario
-        ];
-
-        let textoActual = 0;
-
-        setInterval(() => {
-            textoActual = (textoActual + 1) % textos.length; // Cambia al siguiente texto
-            greetingText.textContent = textos[textoActual];
-
-            if (textoActual === 2) { // Muestra la imagen cuando el texto es "Te mereces una página"
-                mostrarImagen();
-            } else {
-                ocultarImagen(); // Oculta la imagen en otros textos
-            }
-        }, 3000); // Cambia de texto cada 3 segundos
-    </script>
-</body>
 
 </html>
