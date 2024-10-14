@@ -43,7 +43,6 @@
                     Happy Birthday to You!! 🎂
 
                     Alexis te hice una pagina de regalo no se que poner aca, pero espero que la hayas pasado bien porque claramente ya paso tu cumple  y esto estaba en produccion en su momento bueno no va al caso, en conclusion no hay plata ni datos de regalo (aunque tal vez si te preste) pero espero que te guste la pagina
-                    
                     Con cariño tu amigo que no es tu amigo 
                     Ian
                 </p>
@@ -144,6 +143,10 @@
             <p id="replay">Podes apretar aca si querés verlo de nuevo.</p>
             <p class="last-smile">:)</p>
         </div>
+
+        <!-- Imagen que aparece cuando se muestra "Te mereces una página" -->
+        <img src="./img/non.jpg" alt="Imagen especial" id="specialImage" style="display: none; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 1000;" />
+
     </div>
 
 </body>
@@ -152,5 +155,30 @@
     <!-- Sweetalert -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script type="application/javascript" src="./script/main.js"></script>
+
+    <script>
+        const textos = [
+            "¡No hay guita pero esta esto que es mucho mejor!",
+            "Fue tu cumpleaños!!:D",
+            "Te mereces una página",
+            "Encima con un buen fondo. :)"
+        ];
+
+        const greetingText = document.getElementById("greetingText");
+        const specialImage = document.getElementById("specialImage");
+        let textoActual = 0;
+
+        setInterval(() => {
+            textoActual = (textoActual + 1) % textos.length; // Cambia al siguiente texto
+            greetingText.textContent = textos[textoActual];
+
+            // Mostrar imagen especial si el texto es "Te mereces una página"
+            if (textos[textoActual] === "Te mereces una página") {
+                specialImage.style.display = "block"; // Muestra la imagen
+            } else {
+                specialImage.style.display = "none"; // Oculta la imagen
+            }
+        }, 3000); // Cambia el texto cada 3 segundos
+    </script>
 
 </html>
