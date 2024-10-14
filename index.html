@@ -60,6 +60,12 @@
                 .
             </p>
             <p class="idea-4">Te mereces una pagina</p>
+
+            <!-- Imagen añadida aquí -->
+            <div id="img-container" style="display: none;">
+                <img src="./img/francella.png" alt="francella" />
+            </div>
+
             <p class="idea-5">
                 Encima con un buen fondo.
                 <span>:)</span>
@@ -147,10 +153,29 @@
     </div>
 
 </body>
-    <!-- Greensock -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
-    <!-- Sweetalert -->
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script type="application/javascript" src="./script/main.js"></script>
+
+<!-- Greensock -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+<!-- Sweetalert -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<!-- Script para mostrar/ocultar la imagen de Francella -->
+<script type="application/javascript">
+    const idea4 = document.querySelector('.idea-4');
+    const imgContainer = document.getElementById('img-container');
+
+    function toggleImage() {
+        if (idea4.textContent.includes('Te mereces una pagina')) {
+            imgContainer.style.display = 'block'; // Mostrar la imagen
+        } else {
+            imgContainer.style.display = 'none'; // Ocultar la imagen
+        }
+    }
+
+    // Llamar a la función para controlar la imagen
+    toggleImage();
+</script>
+
+<script type="application/javascript" src="./script/main.js"></script>
 
 </html>
