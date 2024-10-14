@@ -60,7 +60,6 @@
                 .
             </p>
             <p class="idea-4">Te mereces una pagina</p>
-            <img src="./img/non.jpg" alt="Imagen no disponible" id="specialImage" style="display:none;"/>
             <p class="idea-5">
                 Encima con un buen fondo.
                 <span>:)</span>
@@ -147,35 +146,11 @@
         </div>
     </div>
 
-    <script>
-        // Función para mostrar/ocultar la imagen
-        function toggleImage() {
-            const specialImage = document.getElementById('specialImage');
-            const idea4 = document.querySelector('.idea-4');
-            const idea5 = document.querySelector('.idea-5');
-
-            // Muestra la imagen si el texto "Te mereces una página" es visible
-            if (idea4.style.display !== 'none') {
-                specialImage.style.display = 'block';
-            } else {
-                specialImage.style.display = 'none';
-            }
-        }
-
-        // Inicializa el evento para cambiar el texto
-        const ideas = document.querySelectorAll('.idea-4, .idea-5');
-        ideas.forEach(idea => {
-            idea.addEventListener('animationend', () => {
-                if (idea.style.display !== 'none') {
-                    idea.style.display = 'none';
-                    toggleImage(); // Oculta la imagen cuando cambia el texto
-                } else {
-                    idea.style.display = 'block';
-                    toggleImage(); // Muestra la imagen cuando aparece el texto
-                }
-            });
-        });
-    </script>
-
 </body>
+    <!-- Greensock -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <!-- Sweetalert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="application/javascript" src="./script/main.js"></script>
+
 </html>
