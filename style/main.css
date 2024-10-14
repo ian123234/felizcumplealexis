@@ -301,4 +301,12 @@ body {
     font-size: 1.5rem;
     font-weight: lighter;
   }
+  
 }
+.non-image {
+    max-width: 80%; /* Ajusta el ancho máximo a un 80% del contenedor */
+    height: auto; /* Mantiene la relación de aspecto de la imagen */
+    display: block; /* Hace que la imagen se comporte como un bloque */
+    margin: 10px auto; /* Centra la imagen y agrega un poco de margen arriba y abajo */
+}
+
